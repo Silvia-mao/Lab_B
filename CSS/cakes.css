@@ -1,0 +1,1210 @@
+/* 導覽列容器起點 */
+.toplogo {
+    border-collapse: collapse;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* 文字置中 */
+    font-size: 35px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    padding: 15px 50px;
+    /* 設置間距 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* 陰影 */
+    z-index: 999;
+    /* 確保層級夠高不會被覆蓋 */
+}
+
+/* 正常狀態的超連結樣式 */
+.link-item {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: rgba(141, 125, 129, 0.884);
+    /* 正常狀態的字體顏色 */
+}
+
+/* 滑鼠懸停時的超連結樣式 */
+.link-item:hover {
+    color: #CFA369;
+    /* 滑鼠懸停時的字體顏色 */
+}
+
+/* 導覽列容器終點 */
+
+.caketable th a {
+    position: relative;
+    display: inline-block;
+    /* 讓連結填滿整個span */
+    text-decoration: none;
+    /* 移除連結預設的下劃線 */
+    color: inherit;
+    /* 使用與父元素相同的文字顏色 */
+    
+}
+ /* --------------------------- */
+.overlay-image {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    margin-left:140px;
+}
+
+/* .overlay-image:hover {
+    opacity: 0.5; 
+    /* 滑鼠懸停時將圖片透明度降低為 0.5 */
+
+
+
+/* 第一張圖片上的放大鏡 */
+.overlay-image2 {
+    position: absolute;
+    top: 0;
+    left: 210px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第一張圖片上的購物車 */
+.overlay-image3 {
+    position: absolute;
+    top: 0;
+    left: 340px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink:hover .overlay-image2 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink:hover .overlay-image3 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第一張圖片上的點擊查看 */
+.view-text2 {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 55px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第一張圖片上的加入購物車 */
+.view-text3 {
+    position: absolute;
+    top: 51%;
+    left: 370px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text2,
+.view-text3 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image2:hover + .view-text2 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image3:hover + .view-text3 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink:hover > .overlay-image {
+    opacity: 0.4; /* 滑鼠經過第二張圖片時，讓第一張圖片透明度變為 0.5 */
+}
+
+.cakesname{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-left:150px;
+}
+
+.cakesprice{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold
+}
+
+/* -------------------------------- */
+
+.overlay-image4 {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    
+}
+
+/* 第二張圖片上的放大鏡 */
+.overlay-image5 {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第二張圖片上的購物車 */
+.overlay-image6 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink2:hover .overlay-image5 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink2:hover .overlay-image6 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第二張圖片上的點擊查看 */
+.view-text4 {
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 52px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第二張圖片上的加入購物車 */
+.view-text5 {
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 52px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text4,
+.view-text5 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image5:hover + .view-text4 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image6:hover + .view-text5 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink2:hover > .overlay-image4 {
+    opacity: 0.4; /* 滑鼠經過icon時，讓商品圖透明度變為 0.4 */
+}
+
+.cakesname2{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-left:15px;
+}
+
+.cakesprice2{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold
+}
+
+/* --------------------------------- */
+
+.overlay-image7 {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    margin-right: 140px;
+}
+
+/* 第三張圖片上的放大鏡 */
+.overlay-image8 {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第三張圖片上的購物車 */
+.overlay-image9 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink3:hover .overlay-image8 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink3:hover .overlay-image9 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第三張圖片上的點擊查看 */
+.view-text6 {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第三張圖片上的加入購物車 */
+.view-text7 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text6,
+.view-text7 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image8:hover + .view-text6 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image9:hover + .view-text7 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink3:hover > .overlay-image7 {
+    opacity: 0.4; /* 滑鼠經過icon時，讓商品圖透明度變為 0.4 */
+}
+
+.cakesname3{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-right:130px;
+}
+
+.cakesprice3{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-right:100px;
+}
+/* ------------------------------------- */
+
+.overlay-image10 {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    margin-left: 120px;
+}
+
+/* 第四張圖片上的放大鏡 */
+.overlay-image11 {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第四張圖片上的購物車 */
+.overlay-image12 {
+    position: absolute;
+    top: 0;
+    left: 310px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink4:hover .overlay-image11 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink4:hover .overlay-image12 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第四張圖片上的點擊查看 */
+.view-text8 {
+    position: absolute;
+    top: 52%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第四張圖片上的加入購物車 */
+.view-text9 {
+    position: absolute;
+    top: 52%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text8,
+.view-text9 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image11:hover + .view-text8 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image12:hover + .view-text9 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink4:hover > .overlay-image10 {
+    opacity: 0.4; /* 滑鼠經過icon時，讓商品圖透明度變為 0.4 */
+}
+
+.cakesname4{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-left:120px;
+}
+
+.cakesprice4{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-left:0px;
+}
+
+/* ----------------------------------------------------- */
+
+.overlay-image13 {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    
+}
+
+/* 第五張圖片上的放大鏡 */
+.overlay-image14 {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第五張圖片上的購物車 */
+.overlay-image15 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink5:hover .overlay-image14 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink5:hover .overlay-image15 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第五張圖片上的點擊查看 */
+.view-text10 {
+    position: absolute;
+    top: 52%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第五張圖片上的加入購物車 */
+.view-text11 {
+    position: absolute;
+    top: 52%;
+    left: 69%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text10,
+.view-text11 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image14:hover + .view-text10 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image15:hover + .view-text11 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink5:hover > .overlay-image13 {
+    opacity: 0.4; /* 滑鼠經過icon時，讓商品圖透明度變為 0.4 */
+}
+
+.cakesname5{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-left:0px;
+}
+
+.cakesprice5{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-left:-20px;
+}
+
+
+/* ----------------------------------------------------- */
+
+.overlay-image16 {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    margin-right: 120px;
+}
+
+/* 第6張圖片上的放大鏡 */
+.overlay-image17 {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第6張圖片上的購物車 */
+.overlay-image18 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink6:hover .overlay-image17 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink6:hover .overlay-image18 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第6張圖片上的點擊查看 */
+.view-text12 {
+    position: absolute;
+    top: 52%;
+    left: 23%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第6張圖片上的加入購物車 */
+.view-text13 {
+    position: absolute;
+    top: 52%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text12,
+.view-text13 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image17:hover + .view-text12 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image18:hover + .view-text13 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink6:hover > .overlay-image16 {
+    opacity: 0.4; /* 滑鼠經過icon時，讓商品圖透明度變為 0.4 */
+}
+
+.cakesname6{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-left:-110px;
+}
+
+.cakesprice6{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-left:-30px;
+}
+
+
+/* ----------------------------------------------------- */
+.overlay-image19 {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    margin-left: 120px;
+}
+
+/* 第7張圖片上的放大鏡 */
+.overlay-image20 {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 20px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第7張圖片上的購物車 */
+.overlay-image21 {
+    position: absolute;
+    top: 0;
+    left: 310px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 20px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink7:hover .overlay-image20 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink7:hover .overlay-image21 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第7張圖片上的點擊查看 */
+.view-text14 {
+    position: absolute;
+    top: 54%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第7張圖片上的加入購物車 */
+.view-text15 {
+    position: absolute;
+    top: 54%;
+    left: 77%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text14,
+.view-text15 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image20:hover + .view-text14 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image21:hover + .view-text15 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink7:hover > .overlay-image19 {
+    opacity: 0.4; /* 滑鼠經過icon時，讓商品圖透明度變為 0.4 */
+}
+
+.cakesname7{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-left:105px;
+}
+
+.cakesprice7{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-left:10px;
+}
+
+
+/* ----------------------------------------------------- */
+.overlay-image22 {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    
+}
+
+/* 第8張圖片上的放大鏡 */
+.overlay-image23 {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第8張圖片上的購物車 */
+.overlay-image24 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink8:hover .overlay-image23 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink8:hover .overlay-image24 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第8張圖片上的點擊查看 */
+.view-text16 {
+    position: absolute;
+    top: 52%;
+    left: 31%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第8張圖片上的加入購物車 */
+.view-text17 {
+    position: absolute;
+    top: 52%;
+    left: 69%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text16,
+.view-text17 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image23:hover + .view-text16 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image24:hover + .view-text17 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink8:hover > .overlay-image22 {
+    opacity: 0.4; /* 滑鼠經過icon時，讓商品圖透明度變為 0.4 */
+}
+
+.cakesname8{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-left:0px;
+}
+
+.cakesprice8{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-left:-10px;
+}
+
+/* ----------------------------------------------------- */
+.overlay-image25 {
+    width: 330px;
+    height: 350px;
+    transition: opacity 0.3s ease-in-out;
+    /*是指淡入淡出效果的變化速度，從緩慢到快再到緩慢。*/
+    margin-right: 120px;
+}
+
+/* 第9張圖片上的放大鏡 */
+.overlay-image26 {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}    
+/* 第9張圖片上的購物車 */
+.overlay-image27 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    /* 其他樣式設定，如寬度、高度等 */
+    background-color: white; /* 設定背景色 */
+    border-bottom: #CFA369;
+    border-radius: 5px; /* 設定圓角大小 */
+    margin-top: 150px; /* 調整文字與圖片的垂直間距 */
+    padding: 15px; /* 加入內邊距，增加背景色範圍 */
+    border: 2px solid #CFA369; /* 設定文字邊框 */
+    font-weight: bold;
+}
+
+.imagelink9:hover .overlay-image26 {
+    opacity: 1; /* 滑鼠經過時，顯示第二張圖片 */
+}
+
+.imagelink9:hover .overlay-image27 {
+    opacity: 1; /* 滑鼠經過時，顯示第三張圖片 */
+}
+/* 第9張圖片上的點擊查看 */
+.view-text18 {
+    position: absolute;
+    top: 52%;
+    left: 23%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+/* 第9張圖片上的加入購物車 */
+.view-text19 {
+    position: absolute;
+    top: 52%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #92653a;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    margin-top: 50px; /* 調整文字與圖片的垂直間距 */
+    
+}
+
+.caketable th:hover a span {
+    opacity: 1.1;
+    /*opacity 是透明度的屬性*/
+}
+
+.view-text18,
+.view-text19 {
+    display: none; /* 初始狀態隱藏文字 */
+}
+
+.overlay-image26:hover + .view-text18 {
+    display: inline; /* 滑鼠懸停第二張圖片時顯示文字 */
+
+}
+
+.overlay-image27:hover + .view-text19 {
+    display: inline; /* 滑鼠懸停第三張圖片時顯示文字 */
+
+}
+
+.imagelink9:hover > .overlay-image25 {
+    opacity: 0.4; /* 滑鼠經過icon時，讓商品圖透明度變為 0.4 */
+}
+
+.cakesname9{
+    color: rgb(99, 95, 95); 
+    font-size: 30px; 
+    font-weight: bold;
+    margin-left:-100px;
+}
+
+.cakesprice9{
+    color: #e46460; 
+    font-size: 35px; 
+    font-weight: bold;
+    margin-left:-5px;
+}
+
+/* ----------------------------------------------------- */
+
+/* 頁尾列表 */
+.container12{
+    
+    background-color: #CFA369;
+    width: calc(100% / 2); 
+    /* 平均分配寬度 */
+    border-collapse: collapse; 
+    /* 讓表格邊框相鄰 */
+    width: 100%; 
+    /* 設置表格寬度 */
+    padding: 12px; 
+    /* 添加內邊距，使內容與邊框有間距 */
+   
+}
+
+.container13{
+    
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: 100px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}
+
+.container14 a {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: -110px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+} 
+
+.container15{
+    
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: -490px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}
+
+.container16{
+    color: #fff;
+    font-size: 40px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: 100px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}
+
+.container16{
+    color: #fff;
+    font-size: 40px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: 100px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/member.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div>
+        <table class="toplogo">
+            <!-- 導覽表格 -->
+            <tr>
+                <td colspan="10" style="background-color: white;"><img src="../HTML/z_img/logo.png" alt=""><br><br></td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">
+                    <span>
+                        <a href="homepage1205.html" class="link-item">
+                            首頁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="cakes.html" class="link-item">
+                            全部商品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="member02.html" class="link-item">
+                            登入/註冊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="contact.html" class="link-item">
+                            聯絡我&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="cakes_cart.html" class="link-item">
+                            購物車&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+                    </span>
+                </td>
+            </tr>
+
+        </table>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>   
+    <!-- 表格 -->
+    <div class="form01" style="text-align:center; font-size: 40px;">
+        <form action="" method="POST" class="formstyle"><b>
+            <div style="color: #fff;">加入會員享好康<br>月月還抽折價券喔</div>
+            <label for="userName" style="color: #fff; font-size: 35px;">*姓名:</label><br>
+            <input type="text" id="userName" name="userName" 
+                style="width: 480px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;"
+                placeholder="請輸入您的姓名" required><br><br>
+
+            <label for="email" style="color: #fff; font-size: 35px;">*電子郵件:</label><br>
+            <input type="email" id="email" name="email" 
+                style="width: 480px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;" 
+                placeholder="請輸入您的電子郵件" required><br><br>
+
+            <label for="password" style="color: #fff; font-size: 35px;">*密碼:</label><br>
+            <input type="password" id="password" name="password" 
+                style="width: 480px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;" 
+                placeholder="請輸入您的密碼" required><br><br>
+
+            <label for="password" style="color: #fff; font-size: 35px;">*確認密碼:</label><br>
+            <input type="password" id="password" name="password" 
+                style="width: 480px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;" 
+                placeholder="再一次輸入您的密碼" required><br><br>
+
+            <!-- 生日日期下拉選單 -->
+            <label for="birthdate" style="color: #fff; font-size: 35px;">*生日:</label><br>
+            <select id="birthyear" name="birthyear" 
+                style="width: 180px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;">
+                <option value="Year">年</option>
+                
+            </select>
+            <select id="birthmonth" name="birthmonth" 
+                style="width: 150px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;" >
+                <option value="Month">月</option>
+               
+            </select>
+            <select id="birthday" name="birthday" 
+                style="width: 150px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;">
+                <option value="Day">日</option>
+                
+            </select>
+
+            <br><br><br><br>
+            <input type="submit" class="custom-button" onclick="registerSuccess()" value="加入會員"><br><br>
+            
+        </form>
+    </div>
+    <script src="../Javascript/member.js"></script>
+    <!-- 頁尾列表 -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <table class="container12">
+        <tr>
+            <th>
+                <div class="container13" >
+                    <br>
+                    <div class="container16">全統西點麵包</div>
+                    <div class="container13" >——————————————————<br>
+                    地址:408台中市南屯區公益路二段51號<br>
+                    電話:(04) 2326-5860 #6541<br>
+                    營業時間:週一至週日 11:00 - 21:00<br>
+                    E-mail:chuantungshop@gmail.com<br>
+                    <br><br><br><br><br>
+                </div>
+            </th>
+            <th>
+                <a href="https://www.facebook.com/chuantungshop/?locale=zh_TW"><img src="../HTML/z_img/facebook.png" style="width: 5%; margin-right: 10px;" ></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/chuan_tung/"><img src="../HTML/z_img/instagram.png" style="width: 5%; margin-right: 5px;" ></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://page.line.me/jnc5218t"><img src="../HTML/z_img/line.png" style="width: 5%; "></a><br>
+                <div class="container14">
+                    <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;————————————</a><br>
+                    <a href="#">•&nbsp;&nbsp;聯絡我們</a><br>
+                    <a href="#">•&nbsp;&nbsp;服務條款</a><br>
+                    <a href="#">•&nbsp;&nbsp;隱私政策</a><br>
+                    <a href="#">•&nbsp;&nbsp;退款政策</a><br>
+                    <br><br><br><br><br>
+                </div>
+                <div class="container15">
+                    公司名稱：全統西點麵包有限公司 統編：86488493
+                </div>
+            </th>
+        </tr>
+        
+    </table>
+</body>
+
+</html>

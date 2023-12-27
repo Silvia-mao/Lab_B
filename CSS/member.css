@@ -1,0 +1,162 @@
+/* 導覽列容器起點 */
+.toplogo {
+    border-collapse: collapse;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* 文字置中 */
+    font-size: 35px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    padding: 15px 50px;
+    /* 設置間距 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* 陰影 */
+    z-index: 999;
+    /* 確保層級夠高不會被覆蓋 */
+}
+
+/* 正常狀態的超連結樣式 */
+.link-item {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: rgba(141, 125, 129, 0.884);
+    /* 正常狀態的字體顏色 */
+}
+
+/* 滑鼠懸停時的超連結樣式 */
+.link-item:hover {
+    color: #CFA369;
+    /* 滑鼠懸停時的字體顏色 */
+}
+
+/* 導覽列容器終點 */
+
+/* 加入會員表單 */
+.form01 {
+    display: flex;
+    justify-content: center;
+    /* 水平方向對齊 */
+    align-items: center;
+    /* 垂直方向對齊 */
+    height: 100vh;
+    /* 垂直置中的高度 */
+}
+
+.formstyle {
+    width: 900px;
+    /* 調整表單寬度 */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    /* 圓角 */
+    background-color: #CFA369;
+    label[for="userName"] {
+        display: inline-block; /* 讓元素以行內塊狀式顯示 */
+        width: 480px; /* 設定標籤寬度 */
+        text-align: left; /* 文字靠左對齊 */
+    }
+    label[for="email"] {
+        display: inline-block; /* 讓元素以行內塊狀式顯示 */
+        width: 480px; /* 設定標籤寬度 */
+        text-align: left; /* 文字靠左對齊 */
+    }
+    label[for="password"] {
+        display: inline-block; /* 讓元素以行內塊狀式顯示 */
+        width: 480px; /* 設定標籤寬度 */
+        text-align: left; /* 文字靠左對齊 */
+    }
+    label[for="birthdate"] {
+        display: inline-block; /* 讓元素以行內塊狀式顯示 */
+        width: 480px; /* 設定標籤寬度 */
+        text-align: left; /* 文字靠左對齊 */
+    }
+}
+
+.custom-button {
+    width: 490px;
+    height: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #CFA369;
+    border: 1px solid #CFA369;
+}
+
+/* 頁尾列表 */
+.container12{
+    
+    background-color: #CFA369;
+    width: calc(100% / 2); 
+    /* 平均分配寬度 */
+    border-collapse: collapse; 
+    /* 讓表格邊框相鄰 */
+    width: 100%; 
+    /* 設置表格寬度 */
+    padding: 12px; 
+    /* 添加內邊距，使內容與邊框有間距 */
+   
+}
+
+.container13{
+    
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: 100px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}
+
+.container14 a {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: -110px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+} 
+
+.container15{
+    
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: -490px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}
+
+.container16{
+    color: #fff;
+    font-size: 40px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: 100px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}

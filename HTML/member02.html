@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/member02.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table class="toplogo">
+            <!-- 導覽表格 -->
+            <tr>
+                <td colspan="10" style="background-color: white;"><img src="../HTML/z_img/logo.png" alt=""><br><br></td>
+            </tr>
+            <tr>
+                <td style="background-color: white;">
+                    <span>
+                        <a href="homepage1205.html" class="link-item">
+                            首頁&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="cakes.html" class="link-item">
+                            全部商品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="member02.html" class="link-item">
+                            登入/註冊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="contact.html" class="link-item">
+                            聯絡我&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="cakes_cart.html" class="link-item">
+                            購物車&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </span>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="form01" style="text-align:center; font-size: 40px;">
+        <form action="" method="POST" class="formstyle">
+            <div style="color: #fff; ">會員登入</div>
+            <label for="email" style="color: #fff; font-size: 35px;">帳號:</label><br>
+            <input type="email" id="email" name="email"
+                style="width: 480px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;"
+                placeholder="請輸入註冊之電子信箱" required><br><br>
+
+            <label for="password" style="color: #fff; font-size: 35px;">密碼:</label><br>
+            <input type="password" id="password" name="password"
+                style="width: 480px; height: 40px; border-radius: 8px; border: 1px solid #ccc; font-size: 25px;"
+                placeholder="請輸入您的密碼" required><br>
+
+            <div>
+                <input type="checkbox" value="">
+                <label class="checkboxid">
+                    保持登入
+                </label>
+                <a href="#" class="password02">
+                    忘記密碼
+                </a>
+                
+            </div>
+           
+            <br>
+            <input type="submit" onclick="registerSuccess()" class="custom-button" value="登入"><br><br>
+
+            <div class="password03">
+                還不是會員嗎?<br>
+                趕緊註冊享好康喔
+            </div><br>
+            <div> 
+                <button class="custom-button" onclick="window.location.href='../HTML/member.html'">加入會員</button>
+            </div><br><br><br><br>
+        </form>
+        
+    </div>
+    <script src="../Javascript/member02.js"></script>
+    <!-- 頁尾列表 -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <table class="container12">
+        <tr>
+            <th>
+                <div class="container13" >
+                    <br>
+                    <div class="container16">全統西點麵包</div>
+                    <div class="container13" >——————————————————<br>
+                    地址:408台中市南屯區公益路二段51號<br>
+                    電話:(04) 2326-5860 #6541<br>
+                    營業時間:週一至週日 11:00 - 21:00<br>
+                    E-mail:chuantungshop@gmail.com<br>
+                    <br><br><br><br><br>
+                </div>
+            </th>
+            <th>
+                <a href="https://www.facebook.com/chuantungshop/?locale=zh_TW"><img src="../HTML/z_img/facebook.png" style="width: 5%; margin-right: 10px;" ></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/chuan_tung/"><img src="../HTML/z_img/instagram.png" style="width: 5%; margin-right: 5px;" ></a>&nbsp;&nbsp;&nbsp;
+                <a href="https://page.line.me/jnc5218t"><img src="../HTML/z_img/line.png" style="width: 5%; "></a><br>
+                <div class="container14">
+                    <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;————————————</a><br>
+                    <a href="#">•&nbsp;&nbsp;聯絡我們</a><br>
+                    <a href="#">•&nbsp;&nbsp;服務條款</a><br>
+                    <a href="#">•&nbsp;&nbsp;隱私政策</a><br>
+                    <a href="#">•&nbsp;&nbsp;退款政策</a><br>
+                    <br><br><br><br><br>
+                </div>
+                <div class="container15">
+                    公司名稱：全統西點麵包有限公司 統編：86488493
+                </div>
+            </th>
+        </tr>
+        
+    </table>
+</body>
+
+</html>

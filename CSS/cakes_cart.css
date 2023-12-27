@@ -1,0 +1,421 @@
+/* 導覽列容器起點 */
+.toplogo {
+    border-collapse: collapse;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* 文字置中 */
+    font-size: 35px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    padding: 15px 50px;
+    /* 設置間距 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* 陰影 */
+    z-index: 999;
+    /* 確保層級夠高不會被覆蓋 */
+}
+
+/* 正常狀態的超連結樣式 */
+.link-item {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: rgba(141, 125, 129, 0.884);
+    /* 正常狀態的字體顏色 */
+}
+
+/* 滑鼠懸停時的超連結樣式 */
+.link-item:hover {
+    color: #CFA369;
+    /* 滑鼠懸停時的字體顏色 */
+}
+
+/* 導覽列容器終點 */
+
+.container {
+    position: relative;
+}
+
+.container02 {
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列 */
+    align-items: flex-start;
+    /* 靠左對齊 */
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: -450px;
+}
+
+.thumbnai2 {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: 20px;
+
+}
+
+.thumbnai3 {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-left: 300px;
+    margin-top: 20px;
+
+}
+
+.main-image {
+    width: 450px;
+    height: 450px;
+    margin-left: 420px;
+    margin-top: 185px;
+    /* 調整放大圖片的位置向上移動 */
+}
+
+/* 右方表格 */
+
+.container03 {
+    margin-left: auto;
+    margin-right: 380px;
+    margin-top: -250px;
+}
+
+.table_text {
+    font-size: 35px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    color: rgb(99, 95, 95);
+}
+
+.table_text2 {
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    margin-right: 400px;
+    margin-top: -30px;
+    color:rgb(99, 95, 95);
+}
+
+.table_text3 {
+    font-size: 50px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    margin-top: -30px;
+    margin-right: 250px;
+    color:#e46460;
+}
+
+.table_text4 {
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    margin-right: 120px;
+    margin-top: -35px;
+}
+
+.buttonminus {
+    transform: scale(1.2);
+    margin-top: 24px;
+    position: absolute;
+    right: 800px;
+    /* 距離父元素左邊的位置 */
+    background-color: #e9ad69;
+    /* 按鈕背景顏色 */
+    color: #161616;
+    /* 文字顏色 */
+}
+
+.numberinput {
+    right: 180px;
+    margin-top: 26px;
+    transform: scale(1.3);
+    width: 250px;
+}
+
+.buttonplus {
+    transform: scale(1.2);
+    position: absolute;
+    right: 400px;
+    margin-top: 23px;
+}
+
+.buttonminus,
+.buttonplus,
+.numberinput {
+    padding: 8px 12px;
+    /* 按鈕和輸入框的內部填充 */
+    font-size: 20px;
+    /* 字體大小 */
+    border: 1px solid #CFA369;
+    /* 邊框 */
+    background-color: #fff;
+    /* 背景顏色 */
+    color: rgb(99, 95, 95);
+    cursor: pointer;
+    /* 鼠標指針樣式 */
+}
+
+/* 按鈕之間的間距 */
+.buttonminus+.numberinput,
+.numberinput+.buttonplus {
+    margin-left: -1px;
+    /* 將邊框重疊 */
+}
+
+.buttonminus2
+{
+   right: 645px;
+    margin-top: 40px;
+    padding: 8px 30px;
+    /* 按鈕和輸入框的內部填充 */
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    border: 1px solid #CFA369;
+    /* 邊框 */
+    background-color: #fff;
+    /* 背景顏色 */
+    color: rgb(99, 95, 95);
+    cursor: pointer;
+    /* 鼠標指針樣式 */
+    transform: scale(1.2);
+    position: absolute;
+}
+.buttonplus2{
+   right: 410px;
+    margin-top: 40px;
+    padding: 8px 40px;
+    /* 按鈕和輸入框的內部填充 */
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    border: 1px solid #CFA369;
+    /* 邊框 */
+    background-color: #fff;
+    /* 背景顏色 */
+    color: rgb(99, 95, 95);
+    cursor: pointer;
+    /* 鼠標指針樣式 */
+    transform: scale(1.2);
+    position: absolute;
+}
+.buttonminus2:hover,
+.buttonplus2:hover {
+  background-color: #CFA369; 
+  /* 滑鼠懸停時的背景顏色 */
+  color: #fff;
+}
+
+.container04{
+    text-decoration: none; 
+    /* 移除超連結的底線 */
+    border-collapse: collapse; 
+    /* 讓表格邊框相鄰 */
+    width: 75%; 
+    /* 設置表格寬度 */
+    table-layout: fixed; 
+    /* 固定表格佈局 */
+    margin: 0 auto;
+    /* 水平置中 */}
+    
+.container04 tr th a {
+    text-decoration: none; 
+    /* 移除超連結的底線 */
+    color: inherit; 
+    /* 繼承父元素的文字顏色 */
+}
+.container04
+tr th {
+    color: #CFA369;
+    border: 1px solid  #CFA369; 
+    /* 添加1px實線邊框 */
+    font-size: 30px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    padding: 12px; 
+    /* 添加內邊距，使內容與邊框有間距 */
+    border-collapse: collapse; 
+    /* 讓表格邊框相鄰 */
+    width: calc(100% / 3); 
+    /* 平均分配寬度 */
+}
+
+.container05 {
+    color: inherit; 
+    /* 繼承父元素的文字顏色 */
+    color: #CFA369;
+    font-size: 40px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    letter-spacing: 3px; 
+    /* 調整文字水平間距 */
+    line-height: 3; 
+    /* 調整文字上下間距 */
+    margin-left: 230px;
+}
+
+.container06 {
+    color: rgb(99, 95, 95);
+    font-size: 30px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: center;
+    letter-spacing: 3px; 
+    /* 調整文字水平間距 */
+    line-height: 3; 
+    /* 調整文字上下間距 */
+}
+
+.container07 img {
+    display: block; /* 讓圖片獨立成為一個區塊元素 */
+    margin: 0 auto; /* 將圖片水平置中 */
+    text-align: center; /* 將內容置中 */
+}
+
+.container08 {
+    color: #CFA369;
+    font-size: 40px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    letter-spacing: 3px; 
+    /* 調整文字水平間距 */
+    line-height: 3; 
+    /* 調整文字上下間距 */
+    margin-left: 230px;
+}
+
+.container09 {
+    color: rgb(99, 95, 95);
+    font-size: 30px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    letter-spacing: 3px; 
+    /* 調整文字水平間距 */
+    line-height: 3; 
+    /* 調整文字上下間距 */
+    margin-left: 500px;
+}
+
+.container10 {
+    color: #CFA369;
+    font-size: 40px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    letter-spacing: 3px; 
+    /* 調整文字水平間距 */
+    line-height: 3; 
+    /* 調整文字上下間距 */
+    margin-left: 230px;
+}
+
+.container11 {
+    color: rgb(99, 95, 95);
+    font-size: 30px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    letter-spacing: 3px; 
+    /* 調整文字水平間距 */
+    line-height: 3; 
+    /* 調整文字上下間距 */
+    margin-left: 500px;
+}
+
+
+/* 頁尾列表 */
+.container12{
+    
+    background-color: #CFA369;
+    width: calc(100% / 2); 
+    /* 平均分配寬度 */
+    border-collapse: collapse; 
+    /* 讓表格邊框相鄰 */
+    width: 100%; 
+    /* 設置表格寬度 */
+    padding: 12px; 
+    /* 添加內邊距，使內容與邊框有間距 */
+   
+}
+
+.container13{
+    
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: 100px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}
+
+.container14 a {
+    text-decoration: none;
+    /* 移除下劃線 */
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: -110px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+} 
+
+.container15{
+    
+    color: #fff;
+    font-size: 25px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: -490px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}
+
+.container16{
+    color: #fff;
+    font-size: 40px;
+    /* 字體大小 */
+    font-weight: bold;
+    /* 字體粗細 */
+    text-align: left;
+    line-height: 2; 
+    /* 調整文字上下間距 */
+    margin-left: 100px;
+    letter-spacing: 2px; 
+    /* 調整文字水平間距 */
+}
